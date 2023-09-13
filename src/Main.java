@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
@@ -57,7 +58,13 @@ public class Main {
             sum += expense;
         }
         double averageAmount = sum / days;
-        System.out.printf(Locale.USСредняя сумма трат за месяц составилаaverageAmount);
-
+        System.out.printf(Locale.US, "Средняя сумма трат за месяц составила %.2f рублей", averageAmount);
+    }
+    public static void task4() {
+        System.out.println("\n\nЗадача 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
